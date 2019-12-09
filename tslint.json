@@ -1,5 +1,8 @@
 {
-  "rulesDirectory": "tslint-plugin-prettier",
+  "rulesDirectory": [
+    "tslint-plugin-prettier",
+    "tslint-no-unused-expression-chai"
+  ],
   "extends" : [
     "tslint:recommended",
     "tslint-config-prettier"
@@ -10,6 +13,7 @@
     "member-ordering": [false],
     "no-console": [false],
     "no-namespace": [true, "allow-declarations"],
+    "no-unused-expression-chai": true,
     "variable-name": [
       true,
       "ban-keywords",
